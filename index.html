@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div>
+        <div class="score-container">
+            <div class="pvc-score" hidden>
+                <span>Player:</span>
+                <span id="player-score">0</span>
+            </div>
+            <div class="pvc-score" hidden>
+                <span>Computer:</span>
+                <span id="computer-score">0</span>
+            </div>
+            <div class="pvp-score" hidden>
+                <span>Player 1:</span>
+                <span id="p1-score">0</span>
+            </div>
+            <div class="pvp-score" hidden>
+                <span>Player 2:</span>
+                <span id="p2-score">0</span>
+            </div>
+        </div>
+        <div id="who-moves"></div>
+    </div>  
+    <div class="game-container">
+        <div id="choice">
+            <div id="pvp">Player vs Player</div>
+            <div id="pvc">Player vs Computer</div>
+        </div>
+        <div id="end" hidden>
+            <div id="who-wins" class="end-theme">Player 1 wins!</div>
+            <div id="who-wins-under">
+                <div id="try-again" class="end-theme">Try again</div>
+                <div id="menu" class="end-theme">Menu</div>
+            </div>
+        </div>
+        <div id="tl-br-line" class="unhide" hidden></div>
+        <div id="tr-bl-line" class="unhide" hidden></div>
+        <div id="l-line" class="vertical-line-win unhide" hidden></div>
+        <div id="r-line" class="vertical-line-win unhide" hidden></div>
+        <div id="mid-v-line" class="vertical-line-win unhide" hidden></div>
+        <div id="top-line" class="horizontal-line-win unhide" hidden></div>
+        <div id="bottom-line" class="horizontal-line-win unhide" hidden></div>
+        <div id="mid-h-line" class="horizontal-line-win unhide" hidden></div>
+        <div class="vertical-line" id="vl1"></div>
+        <div class="vertical-line" id="vl2"></div>
+        <div class="horizontal-line" id="hl1"></div>
+        <div class="horizontal-line" id="hl2"></div>
+        <div class="click" id="spot1"></div>
+        <div class="click" id="spot2"></div>
+        <div class="click" id="spot3"></div>
+        <div class="click" id="spot4"></div>
+        <div class="click" id="spot5"></div>
+        <div class="click" id="spot6"></div>
+        <div class="click" id="spot7"></div>
+        <div class="click" id="spot8"></div>
+        <div class="click" id="spot9"></div>
+        <div class="cross" id="cross-id" hidden>
+            <span class="cross-left"></span>
+            <span class="cross-right"></span>
+        </div>
+        <div class="circle" id="circle-id" hidden>
+            <span class="circle-main" ></span>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
