@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url("blue-background-small-size.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(67, 158, 201);
+}
+
+.game-container {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin: 17.5px auto auto auto;
+}
+.vertical-line, .horizontal-line {
+    background-color: rgb(58, 91, 104);
+    border-radius: 20px;
+}
+
+.horizontal-line {
+    height: 20px;
+    width: 340px;
+}
+
+.vertical-line {
+    height: 340px;
+    width: 20px;
+}
+
+.click {
+    width: 100px;
+    height: 100px;
+}
+
+.vertical-line, .horizontal-line, .click {
+    position: absolute;
+}
+
+.score-container {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#pvp, #pvc {
+    cursor: pointer;
+}
+
+#pvp, #pvc, .end-theme {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(175, 6, 119);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+#choice {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    left: 20px;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+}
+
+#vl1 {
+    left: 100px;
+}
+
+#vl2 {
+    left: 220px;
+}
+
+#hl1 {
+    top: 100px;
+}
+
+#hl2 {
+    top: 220px;
+}
+#spot1, #spot2, #spot3, #spot4, #spot5, #spot6, #spot7, #spot8, #spot9 {
+    cursor: pointer;
+}
+
+#spot1 {
+    top: 0;
+    left: 0;
+}
+
+#spot2 {
+    top: 0;
+    left: 120px;
+}
+
+#spot3 {
+    top: 0;
+    right: 0;
+}
+
+#spot4 {
+    top: 120px;
+    left: 0;
+}
+
+#spot5 {
+    top: 120px;
+    left: 120px;
+}
+
+#spot6 {
+    top: 120px;
+    right: 0;
+}   
+
+#spot7 {
+    bottom: 0;
+    left: 0;
+}
+
+#spot8 {
+    bottom: 0;
+    left: 120px;
+}
+
+#spot9 {
+    bottom: 0;
+    right: 0;
+}
+
+.cross, .circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.cross-left {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(2, 99, 83);
+    position: absolute;
+    top: 40px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.cross-right {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(2, 99, 83);
+    position: absolute;
+    bottom: 40px;
+    border-radius: 10px;
+    transform: rotate(-45deg);
+}
+
+.circle-main {
+    width: 50px;
+    height: 50px;
+    border: 20px solid rgb(40, 5, 194);
+    position: absolute;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+#tl-br-line {
+    position: absolute;
+    height: 400px;
+    width: 15px;
+    background-color: rgb(194, 5, 68);
+    transform: rotate(-45deg);
+    top: -27px;
+    left: 165px;
+    z-index: 11;
+    border-radius: 20px;
+}
+
+#tr-bl-line {
+    position: absolute;
+    height: 400px;
+    width: 15px;
+    background-color: rgb(194, 5, 68);
+    transform: rotate(45deg);
+    top: -32px;
+    left: 165px;
+    z-index: 11;
+    border-radius: 20px;
+}
+
+#l-line {
+    position: absolute;
+    left: 43px;
+}
+
+#r-line {
+    position: absolute;
+    right: 43px;
+}
+
+#mid-v-line {
+    position: absolute;
+    right: 163px;
+}
+
+.vertical-line-win {
+    height: 320px;
+    width: 15px;
+    background-color: rgb(194, 5, 68);
+    z-index: 11;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.horizontal-line-win {
+    height: 15px;
+    width: 320px;
+    background-color: rgb(194, 5, 68);
+    z-index: 11;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+#top-line {
+    position: absolute;
+    top: 50px;
+}
+
+#bottom-line {
+    position: absolute;
+    bottom: 50px;
+}
+
+#mid-h-line {
+    position: absolute;
+    top: 170px;
+}
+
+#end {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 100px;
+    right: 30px;
+    z-index: 12;
+}
+
+#who-wins-under {
+    display: flex;
+    width: auto;
+}
+
+#who-wins {
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+}
+
+#try-again {
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    text-align: center;
+    height: 70px;
+}
+
+#menu {
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    text-align: center;
+    height: 50px;
+    padding: 15px 5px;
+}
+
+.pvp-score, .pvc-score {
+    background-color: rgb(39, 1, 253);
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 1600px) {
+    body {
+        background-size: cover;
+    }
+}
